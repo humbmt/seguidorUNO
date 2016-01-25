@@ -1,4 +1,3 @@
-
 #include <Wire.h>
 
 #define MotorSpeedSet             0x82
@@ -92,5 +91,8 @@ void loop()  {
     delay(5000);
     
   }
+  
+  
 
 }
+//CC by Patos 155, Ags Mx.
