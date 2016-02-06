@@ -39,7 +39,7 @@ void ISR_INTO()
 {
     TCNT2=100;
     flag++;
- if(flag==1)
+ if(flag==1)  // color negro
   {
     countR=counter;
     Serial.print("red=");
@@ -47,7 +47,7 @@ void ISR_INTO()
     digitalWrite(s2,HIGH);
     digitalWrite(s3,HIGH);
   }
-  else if(flag==2)
+  else if(flag==2) // color rojo
    {
     countG=counter;
     Serial.print("green=");
@@ -55,7 +55,7 @@ void ISR_INTO()
     digitalWrite(s2,LOW);
     digitalWrite(s3,HIGH);
    }
-   else if(flag==3)
+   else if(flag==3) // color verde
     {
     countB=counter;
     Serial.print("blue=");
@@ -65,7 +65,7 @@ void ISR_INTO()
     digitalWrite(s3,LOW);
     
     }
-    else if(flag==4)
+    else if(flag==4) // color azul
      {
      flag=0;
      }
